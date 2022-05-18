@@ -1,0 +1,7 @@
+.corner div{
+    --size:2em;
+    height: var(--size);
+    background: white;
+    border-radius: 1em 1em 0 0;
+}
+.corner{background-color: #212529;}
