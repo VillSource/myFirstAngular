@@ -3,15 +3,18 @@ import { CommonModule } from '@angular/common';
 
 import { BlogRoutingModule } from './blog-routing.module';
 import { TimelineComponent } from './timeline/timeline.component';
+import { CardComponent } from '../components/card/card.component';
+import { ComponentsModule } from '../components/components.module';
 
 
 @NgModule({
   declarations: [
-    TimelineComponent
+    TimelineComponent,
   ],
   imports: [
     CommonModule,
-    BlogRoutingModule
+    BlogRoutingModule,
+    ComponentsModule
   ]
 })
 export class BlogModule { }

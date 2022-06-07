@@ -1,0 +1,15 @@
+<div class="card border-0  shadow-sm h-100">
+
+    <img [src]="imageURL" class="card-img" [alt]="imageALT">
+
+    <div class="card-body">
+        <h5 class="card-title pb-3" [innerText]="cardTitle"></h5>
+        <app-tag *ngFor="let tag of tags" [tagName]="tag"></app-tag>
+        <hr class="opacity-0"/>
+        <a href="#" class="text-decoration-none text-info">Read more ...</a>
+        <span class="text-muted float-end">
+            {{posted | date:'mediumDate'}} {{posted|date:'shortTime'}}
+        </span>
+    </div>
+
+</div>

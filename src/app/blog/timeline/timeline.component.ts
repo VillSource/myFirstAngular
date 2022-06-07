@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PlaygroundService } from 'src/app/services/playground.service';
+import { JsonPost } from 'src/models/jsonPost.model.tmp';
 
 @Component({
   selector: 'app-timeline',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimelineComponent implements OnInit {
 
-  constructor() { }
+  tmp:JsonPost[] = [];
+
+  constructor(private service:PlaygroundService) { }
 
   ngOnInit(): void {
-  }
+    this.service.getPostFromJSON()
+      .subscribe(data=>{
+        this.tmp = data
+      })      
+    } 
 
 }

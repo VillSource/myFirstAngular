@@ -1,1 +1,12 @@
-<p>timeline works!</p>
+<div class="container py-5">
+    
+    <div class="g-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+        <app-card *ngFor="let i of tmp"
+            [cardTitle]="i.articel"
+            [imageALT]="i.articel"
+            [imageURL]="i.tumbail"
+            [tags]="i.tags"
+        ></app-card>
+    </div>
+
+</div>

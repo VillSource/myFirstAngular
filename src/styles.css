@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --bs-body-bg:#EEE;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--bs-info);
+  background: #444;
+}
+
+::selection {
+  color: var(--bs-info); 
+  background: #444;
+  border-radius: 50%;
+}
+
+.card-img{
+    object-fit: cover;
+}
