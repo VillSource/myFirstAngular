@@ -13,11 +13,13 @@ export class CardComponent implements OnInit {
   @Input() posted:Date = new Date();
   @Input() tags:string[] = [];
 
+  url64:string = '';
+
   constructor() {
 
   }
 
   ngOnInit(): void {
+    this.url64 = btoa('anirut');
   }
-
 }

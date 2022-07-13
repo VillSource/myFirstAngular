@@ -1,0 +1,6 @@
+li:hover{
+    background-color: var(--theme-bg);
+    border-radius: 2rem;
+    text-decoration-line: underline overline;
+    text-decoration-color: hsl(226, 100%, 50);;
+}

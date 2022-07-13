@@ -1,9 +1,15 @@
 <div class="card border-0  shadow-sm h-100">
 
-    <img [src]="imageURL" class="card-img" [alt]="imageALT">
+    <a [href]="url64"><img
+        class="card-img"
+        [src]="imageURL"
+        [alt]="imageALT"
+    ></a>
 
     <div class="card-body">
-        <h5 class="card-title pb-3" [innerText]="cardTitle"></h5>
+        <a [href]="cardTitle" class="text-decoration-none text-black">
+            <h5 class="card-title pb-3" [innerText]="cardTitle"></h5>
+        </a>
         <app-tag *ngFor="let tag of tags" [tagName]="tag"></app-tag>
         <hr class="opacity-0"/>
         <a href="#" class="text-decoration-none text-info">Read more ...</a>

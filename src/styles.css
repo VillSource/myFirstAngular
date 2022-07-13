@@ -1,19 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-:root{
-    --bs-body-bg:#EEE;
+:root {
+  
+  --theme-brightness:97%;
+  --theme-bg:hsla(226, 100%, var(--theme-brightness),.5);
+  --bs-body-bg: rgb(246, 247, 255);
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: var(--bs-info);
   background: #444;
 }
 
 ::selection {
-  color: var(--bs-info); 
+  color: var(--bs-info);
   background: #444;
   border-radius: 50%;
 }
 
-.card-img{
-    object-fit: cover;
+.card-img {
+  object-fit: cover;
+}
+
+.glass {
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  --bs-bg-opacity:.7;
 }

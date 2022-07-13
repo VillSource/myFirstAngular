@@ -1,9 +1,14 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TimelineComponent } from './timeline/timeline.component';
+import { BlogComponent } from './blog.component';
+import { ContentComponent } from './content/content.component';
 
 const routes: Routes = [
-  { path:'', component: TimelineComponent }
+  { path:'', component: BlogComponent },
+  {
+    path:':contentID',
+    component: ContentComponent
+  }
 ];
 
 @NgModule({

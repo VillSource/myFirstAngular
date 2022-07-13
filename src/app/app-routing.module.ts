@@ -10,7 +10,6 @@ const routes: Routes = [
     path:'',
     loadChildren:()=>import('./blog/blog.module').then(m=>m.BlogModule)
   },
-  // {path:'blogs', component:BlogComponent},
   {path:'**', redirectTo:''}
 ];
 
